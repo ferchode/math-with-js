@@ -43,3 +43,31 @@ function calculoCirculo (radio){
 }
 
 console.log(calculoCirculo(3));
+
+//Altura de un triangulo isosceles
+
+function calculoIsosceles(lado1, base) {
+
+    let a = lado1 ** 2;
+    let b = (base **2) / 4;
+    let c = a - b;
+
+    return Math.sqrt(c);
+
+    
+}
+
+console.log(calculoIsosceles(30,12));
+
+
+//Altura tirangulo escaleno
+
+function calcularEscaleno(lado1, lado2, lado3){
+
+    let s = (lado1 + lado2 + lado3) / 2;
+    
+    return 2 / lado1 * Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
+    
+}
+
+console.log(calcularEscaleno(6, 8, 10));
